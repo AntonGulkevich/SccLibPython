@@ -13,7 +13,7 @@ class ChannelTypes(IntEnum):
     Ftd = 4
 
 
-class TraceInfo:
+class TrackInfo:
     def __init__(self):
         self.label = ""
         self.version = None

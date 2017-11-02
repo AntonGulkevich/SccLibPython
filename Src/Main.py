@@ -32,15 +32,23 @@ def inc(data):
 if __name__ == '__main__':
     # маршрут3_процедура.scc429
     # маршрут3_процедура_маневр.scc429
-    path_to_bin = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../bin trace//маршрут3_процедура.scc429'))
+    path_to_bin = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//маршрут3_процедура.scc429'))
 
-    path_to_xml = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//ТочкидляРЛО.xml'))
-    waypoints = import_waypoints_from_xml(path_to_xml)
+    sender429_imported = Arinc429Sender()
+    sender429_imported.import_from_file(path_to_bin)
+    sender429_imported.bind(None, 0)
+    sender429_imported.show_function_details = True
+    sender429_imported.show_words_details = False
+    sender429_imported.start(Mode.async, 100000)
+    sender429_imported.join()
 
-    if waypoints is not None:
-        for wp in waypoints:
-            print("Waypoint: ")
-            print(wp.__dict__)
+    # path_to_xml = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//ТочкидляРЛО.xml'))
+    # waypoints = import_waypoints_from_xml(path_to_xml)
+    #
+    # if waypoints is not None:
+    #     for wp in waypoints:
+    #         print("Waypoint: ")
+    #         print(wp.__dict__)
 
     test708 = False
     test429 = False

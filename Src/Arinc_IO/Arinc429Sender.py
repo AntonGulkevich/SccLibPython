@@ -45,22 +45,37 @@ class Arinc429Sender(IArinc429, Sender):
         return ChannelTypes.Arinc429 == channel_type
 
     def _initialize_context(self):
-        self.__context = byref((Word429 * len(self._words))(*self._words))
+        if self.is_imported():
+            return
+        else:
+            self.__context = byref((Word429 * len(self._words))(*self._words))
 
-        _f_words = copy.deepcopy(self._words)
-        _f_words[0].time = RateTimes[self.get_rate()]
-        self.__first_pointer = byref((Word429 * len(_f_words))(*_f_words))
+            _f_words = copy.deepcopy(self._words)
+            _f_words[0].time = RateTimes[self.get_rate()]
+            self.__first_pointer = byref((Word429 * len(_f_words))(*_f_words))
 
     def _setup_channel(self):
         err = Proxy.Set429OutputChannelParams(self.get_serial_number(), self.get_channel_number(), self.get_rate(),
                                               self.get_parity())
+        if err == 0 and self.show_function_details is True:
+            print("Set 429 Output Channel Params is OK.")
         if err < 0:
             raise LibError("Unable to set output channel parameters of 429 channel.", err)
 
     def _reset_channel(self):
         err = Proxy.ResetOut429Channel(self.get_serial_number(), self.get_channel_number())
+        if err == 0 and self.show_function_details is True:
+            print("Reset Out 429 Channel is OK")
         if err < 0:
             raise (LibError("ResetOut429Channel failed", err))
+
+    def _import_settings(self):
+        if self._track_info.rate is None:
+            raise ValueError("Failed to import channel's rate from file.")
+        if self._track_info.parity is None:
+            raise ValueError("Failed to import channel's parity from file.")
+        self.set_rate(self._track_info.rate)
+        self.set_parity(self._track_info.parity)
 
     # public:
     def setup(self, rate: Rates, parity: Arinc429ParityTypeOut, periodMs: int):
@@ -82,6 +97,39 @@ class Arinc429Sender(IArinc429, Sender):
                     self.append(i)
                 continue
             raise ValueError("Undefined data: {0}".format(elem))
+
+    def send_imported(self):
+        words_count_to_send = len(self._track_info.words) - self._imported_words_sent
+        if words_count_to_send > 0:
+            words_prepared_to_send = words_count_to_send if words_count_to_send < MAX_WORD429_COUNT else MAX_WORD429_COUNT
+            # print(words_count_to_send, " Max ", MAX_WORD429_COUNT, " prepared:", words_prepared_to_send)
+            tmp_buf = []
+            for w in self._track_info.words[self._imported_words_sent:words_prepared_to_send+self._imported_words_sent]:
+                word = Word429()
+                word.data = w.data
+                word.time = w.time
+                tmp_buf.append(word)
+            self.__context = byref((Word429 * words_prepared_to_send)(*tmp_buf))
+
+            sendRec = Proxy.Send429WordsRaw(self.get_serial_number(), self.get_channel_number(), self.__context,
+                                            words_prepared_to_send)
+            if sendRec < 0:
+                raise LibError("Send429WordsRaw failed. ", sendRec)
+
+            if sendRec > 0 and self.show_function_details is True:
+                print("Sent 429 words: {}".format(sendRec))
+
+            if sendRec > 0 and self.show_words_details is True:
+                for w in tmp_buf:
+                    print("Sent:  data: {:10} time: {}".format(hex(w.data), w.time))
+
+            self._imported_words_sent = self._imported_words_sent + words_prepared_to_send
+        else:
+            res_count = Proxy.Get429OutputBufferWordsCount(self.get_serial_number(), self.get_channel_number())
+            if res_count == 0:
+                self._imported_words_sent = 0
+
+        sleep(0.02)
 
     def send(self):
         res_mcs = Proxy.Get429OutputBufferMicroseconds(self.get_serial_number(), self.get_channel_number())

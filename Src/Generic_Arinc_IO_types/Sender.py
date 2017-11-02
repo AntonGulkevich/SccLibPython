@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from Generic_Arinc_IO_types.ComplicatedProcess import ComplicatedProcess
-from Arinc_IO.TrackParser import TraceInfo
+from Arinc_IO.TrackParser import TrackInfo
 
 
 class Sender(ComplicatedProcess, metaclass=ABCMeta):
@@ -18,8 +18,20 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
 
         self._dynamic_functor = None
 
+        self._track_info: TrackInfo = None
+
+        self.__is_imported = False
+
+        self._imported_words_sent = 0
+
+    def is_imported(self):
+        return self.__is_imported
+
     def _do(self, sharedList=None):
-        self.send()
+        if self.is_imported():
+            self.send_imported()
+        else:
+            self.send()
 
     @abstractmethod
     def _reset_channel(self):
@@ -38,6 +50,10 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
         pass
 
     @abstractmethod
+    def send_imported(self):
+        pass
+
+    @abstractmethod
     def append(self, data):
         """
         Parse arguments and try to add them in packet
@@ -49,27 +65,40 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
     def _validate_channel_type(self, channel_type):
         pass
 
+    @abstractmethod
+    def _import_settings(self):
+        pass
+
     def import_from_file(self, path):
-        tr_info = TraceInfo()
-        if tr_info.import_track(path) is None:
+        self.__is_imported = True
+        # clear dynamic functor
+        self._dynamic_functor = None
+        # init track info
+        self._track_info = TrackInfo()
+        # import track from file
+        if self._track_info.import_track(path) is None:
             raise (IOError("File : \"{}\" is not exist.". format(path)))
-        if self._validate_channel_type(tr_info.channel_type) is False:
-            raise (ValueError("Wrong channel type: {}".format(tr_info.channel_type.name)))
-
-        self._words = tr_info.words
-
-
+        # ensure we are working with correct channel type
+        if self._validate_channel_type(self._track_info.channel_type) is False:
+            raise (ValueError("Wrong channel type: {}".format(self._track_info.channel_type.name)))
+        # import settings
+        self._import_settings()
 
     def clearWords(self):
         """
         Remove all Arinc words from the packet
         """
-        self._words.clear()
+        if self.is_imported():
+            return self._track_info.words.clear()
+        else:
+            self._words.clear()
 
     def get_words_count(self):
         """
         :return: count of Arinc words in the packet
         """
+        if self.is_imported():
+            return len(self._track_info.words)
         return len(self._words)
 
     def remove(self, indexStart: int = None, indexEnd: int = None):
@@ -83,6 +112,9 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
         :param indexEnd:
         :return: count of words deleted
         """
+        if self.is_imported():
+            raise (ImportError("Data was imported. \"{}\" function is unavailable in import mode.".format(self.remove.__name__)))
+
         prCount = self.get_words_count()
         if indexStart is None and indexEnd is None:
             return 0
@@ -95,7 +127,9 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
         return prCount - self.get_words_count()
 
     def set_dynamic_function(self, user_defined_functor):
+        if self.is_imported():
+            raise (ImportError("Data was imported. \"{}\" function is unavailable in import mode.".format(self.set_dynamic_function.__name__)))
         self._dynamic_functor = user_defined_functor
 
     def is_dynamic(self):
-        return False if self._dynamic_functor is None else True
+        return self._dynamic_functor is not None
