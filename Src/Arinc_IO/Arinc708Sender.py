@@ -6,6 +6,7 @@ from ctypes import byref, c_ubyte
 from Src.ArincTypes import Word708, MAX_WORD708_COUNT
 import copy
 from time import sleep
+from Arinc_IO.TrackParser import ChannelTypes
 
 
 class Arinc708Sender(IArinc708, Sender):
@@ -75,6 +76,9 @@ class Arinc708Sender(IArinc708, Sender):
         err = Proxy.ResetOut708Channel(self.get_serial_number(), self.get_channel_number())
         if err < 0:
             raise (LibError("ResetOut708Channel failed", err))
+
+    def _validate_channel_type(self, channel_type):
+        return ChannelTypes.Arinc708 == channel_type
 
     def _initialize_context(self):
         self.__context = byref((Word708 * len(self._words))(*self._words))

@@ -7,6 +7,7 @@ import Src.MediatorClientWrapper as Proxy
 from Src.MediatorClientWrapper import LibError
 from ArincTypes import Rates, Arinc429ParityTypeOut, RateTimes, MAX_WORD429_COUNT
 import copy
+from Arinc_IO.TrackParser import ChannelTypes
 
 
 class Arinc429Sender(IArinc429, Sender):
@@ -40,6 +41,9 @@ class Arinc429Sender(IArinc429, Sender):
         self._words[0].time = self.__periodMs * 100 - (len(self._words) - 1) * RateTimes[self.get_rate()]
 
     # protected:
+    def _validate_channel_type(self, channel_type):
+        return ChannelTypes.Arinc429 == channel_type
+
     def _initialize_context(self):
         self.__context = byref((Word429 * len(self._words))(*self._words))
 

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" line="37" />
     <bookmark url="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" line="30" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f3624c4-1116-4e42-9612-b36e72016dee" name="Default" comment="" />
+    <list default="true" id="3f3624c4-1116-4e42-9612-b36e72016dee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/маршрут3_процедура.scc429" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/маршрут3_процедура_маневр.scc429" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/маршрут52.scc429" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/маршрут52_процедура.scc429" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/маршрут52_процедура_маневр_OBs.scc429" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin trace/ТочкидляРЛО.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/ArincTypes.py" afterPath="$PROJECT_DIR$/Src/ArincTypes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" afterPath="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Main.py" afterPath="$PROJECT_DIR$/Src/Main.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +40,8 @@
             <file leaf-file-name="Scenarios.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Src/Scenarios.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="192">
-                    <caret line="387" column="33" lean-forward="true" selection-start-line="387" selection-start-column="33" selection-end-line="387" selection-end-column="33" />
+                  <state relative-caret-position="5865">
+                    <caret line="387" column="33" lean-forward="false" selection-start-line="387" selection-start-column="33" selection-end-line="387" selection-end-column="33" />
                     <folding>
                       <element signature="e#0#112#0" expanded="true" />
                       <element signature="e#383#476#0" expanded="false" />
@@ -48,8 +62,8 @@
             <file leaf-file-name="ArincTypes.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="340">
-                    <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+                  <state relative-caret-position="493">
+                    <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
                     <folding>
                       <element signature="e#0#13#0" expanded="true" />
                     </folding>
@@ -60,8 +74,8 @@
             <file leaf-file-name="MediatorClientWrapper.py" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/Src/MediatorClientWrapper.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="217">
-                    <caret line="326" column="62" lean-forward="true" selection-start-line="326" selection-start-column="62" selection-end-line="326" selection-end-column="62" />
+                  <state relative-caret-position="5491">
+                    <caret line="326" column="62" lean-forward="false" selection-start-line="326" selection-start-column="62" selection-end-line="326" selection-end-column="62" />
                     <folding />
                   </state>
                 </provider>
@@ -83,22 +97,20 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#79#0" expanded="true" />
-                <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-                <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplicatedProcess.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComplicatedProcess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+            <state relative-caret-position="353">
+              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#1092#1135#0" expanded="false" />
@@ -112,56 +124,52 @@
                 <element signature="e#3482#3754#0" expanded="false" />
                 <element signature="e#3817#3843#0" expanded="false" />
                 <element signature="e#3890#3912#0" expanded="false" />
-                <marker date="1509367267561" expanded="false" signature="377:912" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arinc708Listener.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
+      <file leaf-file-name="TrackParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="761">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arinc429Listener.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py">
+      <file leaf-file-name="xml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+            <state relative-caret-position="510">
+              <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
-                <element signature="e#555#603#0" expanded="false" />
-                <element signature="e#643#923#0" expanded="false" />
-                <element signature="e#1215#1266#0" expanded="false" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sender.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sender.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#484#495#0" expanded="false" />
-                <element signature="e#555#559#0" expanded="false" />
-                <element signature="e#624#628#0" expanded="false" />
-                <element signature="e#688#692#0" expanded="false" />
-                <element signature="e#742#746#0" expanded="false" />
-                <element signature="e#804#934#0" expanded="false" />
-                <element signature="e#804#921#1" expanded="false" />
-                <element signature="e#970#1060#0" expanded="false" />
-                <element signature="e#1101#1200#0" expanded="false" />
-                <element signature="e#1278#2194#0" expanded="false" />
+                <element signature="e#527#538#0" expanded="false" />
+                <element signature="e#598#602#0" expanded="false" />
+                <element signature="e#667#671#0" expanded="false" />
+                <element signature="e#731#735#0" expanded="false" />
+                <element signature="e#785#789#0" expanded="false" />
+                <element signature="e#847#977#0" expanded="false" />
+                <element signature="e#847#964#1" expanded="false" />
+                <element signature="e#1489#1579#0" expanded="false" />
+                <element signature="e#1620#1719#0" expanded="false" />
+                <element signature="e#1797#2713#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -170,8 +178,8 @@
       <file leaf-file-name="Arinc429Sender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -192,7 +200,7 @@
       <file leaf-file-name="Listener.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Listener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="204">
               <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -206,10 +214,11 @@
       <file leaf-file-name="Arinc708Sender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="48" column="63" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#577#603#0" expanded="false" />
+                <element signature="e#633#2421#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -234,10 +243,15 @@
       <find>stopEvent</find>
       <find>format</find>
       <find>hex</find>
+      <find>Header</find>
+      <find>1699792914</find>
     </findStrings>
     <replaceStrings>
       <replace>remove</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -271,20 +285,21 @@
         <option value="$PROJECT_DIR$/Src/Generic_interfaces_types/IArinc708.py" />
         <option value="$PROJECT_DIR$/Src/Generic_interfaces_types/ComplicatedProcess.py" />
         <option value="$PROJECT_DIR$/Tests/TestScenarios.py" />
-        <option value="$PROJECT_DIR$/Src/ArincTypes.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/IOSettings.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/IArinc708.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/IArinc429.py" />
         <option value="$PROJECT_DIR$/Src/Arinc708Generator.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Listener.py" />
-        <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" />
-        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py" />
-        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py" />
-        <option value="$PROJECT_DIR$/Src/Main.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
+        <option value="$PROJECT_DIR$/Src/ArincTypes.py" />
+        <option value="$PROJECT_DIR$/Src/Main.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py" />
+        <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" />
       </list>
     </option>
   </component>
@@ -319,6 +334,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -334,19 +352,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SccLibPython" type="b2602c69:ProjectViewProjectNode" />
               <item name="SccLibPython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SccLibPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SccLibPython" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SccLibPython" type="b2602c69:ProjectViewProjectNode" />
@@ -402,7 +415,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.TrackParser">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -417,6 +430,23 @@
       <module name="SCC in python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Src/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="TrackParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Src/Arinc_IO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SCC in python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,14 +467,16 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/TestScenarios.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.Main" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestScenarios.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TrackParser" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestScenarios.py" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.TrackParser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestScenarios.py" />
       </list>
     </recent_temporary>
   </component>
@@ -498,13 +530,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40509012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3128314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -564,29 +595,18 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="143" />
+      <option name="time" value="150" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../PythonApplication3/PythonApplication3/ArincTypes.py" />
     <entry file="file://$PROJECT_DIR$/Src/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
-            <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-            <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
           </folding>
         </state>
       </provider>
@@ -598,8 +618,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
-            <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-            <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
           </folding>
         </state>
       </provider>
@@ -611,21 +629,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#79#0" expanded="true" />
-            <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-            <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonApplication3/PythonApplication3/ArincTypes.py" />
-    <entry file="file://$PROJECT_DIR$/Src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-            <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-            <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
           </folding>
         </state>
       </provider>
@@ -757,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="222" column="0" lean-forward="false" selection-start-line="222" selection-start-column="0" selection-end-line="222" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/MediatorClientWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="326" column="62" lean-forward="true" selection-start-line="326" selection-start-column="62" selection-end-line="326" selection-end-column="62" />
+        <state relative-caret-position="5491">
+          <caret line="326" column="62" lean-forward="false" selection-start-line="326" selection-start-column="62" selection-end-line="326" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -829,20 +827,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="595">
+          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="731">
           <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="false" />
             <element signature="e#555#603#0" expanded="false" />
             <element signature="e#643#923#0" expanded="false" />
             <element signature="e#1215#1266#0" expanded="false" />
@@ -852,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Scenarios.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="387" column="33" lean-forward="true" selection-start-line="387" selection-start-column="33" selection-end-line="387" selection-end-column="33" />
+        <state relative-caret-position="5865">
+          <caret line="387" column="33" lean-forward="false" selection-start-line="387" selection-start-column="33" selection-end-line="387" selection-end-column="33" />
           <folding>
             <element signature="e#0#112#0" expanded="true" />
             <element signature="e#383#476#0" expanded="false" />
@@ -870,63 +868,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="48" column="63" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/pythonInterpreterx64/Lib/genericpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-            <marker date="1509450904032" expanded="true" signature="3999:4186" ph="..." />
-            <marker date="1509450904032" expanded="true" signature="4320:4353" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="204">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -950,30 +896,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py">
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#484#495#0" expanded="false" />
-            <element signature="e#555#559#0" expanded="false" />
-            <element signature="e#624#628#0" expanded="false" />
-            <element signature="e#688#692#0" expanded="false" />
-            <element signature="e#742#746#0" expanded="false" />
-            <element signature="e#804#934#0" expanded="false" />
-            <element signature="e#804#921#1" expanded="false" />
-            <element signature="e#970#1060#0" expanded="false" />
-            <element signature="e#1101#1200#0" expanded="false" />
-            <element signature="e#1278#2194#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/416121438/_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="973" column="8" lean-forward="false" selection-start-line="973" selection-start-column="8" selection-end-line="973" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#577#603#0" expanded="false" />
+            <element signature="e#633#2421#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        <state relative-caret-position="353">
+          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="e#1092#1135#0" expanded="false" />
@@ -987,7 +972,36 @@
             <element signature="e#3482#3754#0" expanded="false" />
             <element signature="e#3817#3843#0" expanded="false" />
             <element signature="e#3890#3912#0" expanded="false" />
-            <marker date="1509367267561" expanded="false" signature="377:912" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#527#538#0" expanded="false" />
+            <element signature="e#598#602#0" expanded="false" />
+            <element signature="e#667#671#0" expanded="false" />
+            <element signature="e#731#735#0" expanded="false" />
+            <element signature="e#785#789#0" expanded="false" />
+            <element signature="e#847#977#0" expanded="false" />
+            <element signature="e#847#964#1" expanded="false" />
+            <element signature="e#1489#1579#0" expanded="false" />
+            <element signature="e#1620#1719#0" expanded="false" />
+            <element signature="e#1797#2713#0" expanded="false" />
           </folding>
         </state>
       </provider>

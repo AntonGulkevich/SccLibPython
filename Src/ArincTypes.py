@@ -34,7 +34,7 @@ class Arinc429ParityTypeOut(IntEnum):
 
 class Arinc429ParityTypeIn(IntEnum):
     NoChange = 0
-    Always = 1
+    Analysis = 1
 
 
 RateTimes = {Rates.Disabled: 0, Rates.R100: 36, Rates.R50: 72, Rates.R12_5: 288}

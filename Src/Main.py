@@ -7,6 +7,10 @@ from Arinc_IO.Arinc429Sender import Arinc429Sender
 from Arinc_IO.Arinc429Listener import Arinc429Listener
 from Arinc708Generator import Arinc708Generator, ColorIndex
 from Arinc_IO.xml import Waypoint, import_waypoints_from_xml
+import os
+
+# here = lambda x: os.path.abspath(os.path.join(os.path.dirname(__file__), x))
+# DATA_DIR = here('datadir')
 
 
 def foo(val):
@@ -26,8 +30,12 @@ def inc(data):
 
 
 if __name__ == '__main__':
+    # маршрут3_процедура.scc429
+    # маршрут3_процедура_маневр.scc429
+    path_to_bin = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../bin trace//маршрут3_процедура.scc429'))
 
-    waypoints = import_waypoints_from_xml("C:\\Users\\Gulkevich_A\\Desktop\\ТочкидляРЛО.xml")
+    path_to_xml = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//ТочкидляРЛО.xml'))
+    waypoints = import_waypoints_from_xml(path_to_xml)
 
     if waypoints is not None:
         for wp in waypoints:

@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from Generic_Arinc_IO_types.ComplicatedProcess import ComplicatedProcess
+from Arinc_IO.TrackParser import TraceInfo
 
 
 class Sender(ComplicatedProcess, metaclass=ABCMeta):
@@ -43,6 +44,21 @@ class Sender(ComplicatedProcess, metaclass=ABCMeta):
         :param data: list or tuple of word data
         """
         pass
+
+    @abstractmethod
+    def _validate_channel_type(self, channel_type):
+        pass
+
+    def import_from_file(self, path):
+        tr_info = TraceInfo()
+        if tr_info.import_track(path) is None:
+            raise (IOError("File : \"{}\" is not exist.". format(path)))
+        if self._validate_channel_type(tr_info.channel_type) is False:
+            raise (ValueError("Wrong channel type: {}".format(tr_info.channel_type.name)))
+
+        self._words = tr_info.words
+
+
 
     def clearWords(self):
         """
