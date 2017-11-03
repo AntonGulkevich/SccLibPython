@@ -2,6 +2,7 @@ import os
 from ArincTypes import Word429, Word708
 from enum import IntEnum, unique
 from ArincTypes import Rates, Arinc429ParityTypeIn
+import ctypes
 
 
 @unique
@@ -11,6 +12,13 @@ class ChannelTypes(IntEnum):
     Arinc708 = 2
     Rs232 = 3
     Ftd = 4
+
+
+def reverse_adr(data):
+    return (((data & 1) << 7) | ((data & 2) << 5) | ((data & 4) << 3) |
+            ((data & 8) << 1) |
+            ((data & 16) >> 1) | ((data & 32) >> 3) | ((data & 64) >> 5) |
+            ((data & 128) >> 7))
 
 
 class TrackInfo:
@@ -23,7 +31,7 @@ class TrackInfo:
         self.rate: Rates = None
         self.words = []
 
-        self.__show_parse = False
+        self.__show_parse = True
 
     def import_track(self, path):
         if os.path.isfile(path) is False:
@@ -59,7 +67,7 @@ class TrackInfo:
         offset = offset + 4
         # channel_type == 0 or channel_type == 3 or channel_type == 4
         if any(channel_type == t for t in [ChannelTypes.Unknown, ChannelTypes.Rs232, ChannelTypes.Ftd]):
-            raise (ValueError("Wrong type: {}".format(channel_type.name)))
+            raise (ValueError("Wrong channel type: {}".format(channel_type.name)))
 
         if channel_type is ChannelTypes.Arinc429:
 
@@ -71,7 +79,7 @@ class TrackInfo:
 
             """ Parity """
 
-            parity = Arinc429ParityTypeIn(int.from_bytes(header[offset:offset + 4], byteorder='little'))
+            parity = Arinc429ParityTypeIn(int.from_bytes(header[offset:offset + 4], byteorder='big'))
             self.parity = parity
             offset = offset + 4
 
@@ -88,11 +96,14 @@ class TrackInfo:
             for word429 in words_429_from_raw(file):
                 self.words.append(word429)
                 if self.__show_parse:
-                    print("{}: Data: {}, Time: {}".format(counter, word429.data, word429.time))
+                    print("{}: Address: {:3o} Data: {:>10}, Time: {}"
+                          .format(counter, reverse_adr(word429.data & 0xFF), word429.data >> 8, word429.time))
                 counter = counter + 1
             return True
 
         if channel_type is ChannelTypes.Arinc708:
+
+            self.channel_type = ChannelTypes.Arinc708
 
             """ Output """
             if self.__show_parse:
@@ -105,9 +116,10 @@ class TrackInfo:
             # read 708 data
             counter = 1
             for word708 in words_708_from_raw(file):
+                assert (word708.time != 0)
                 self.words.append(word708)
                 if self.__show_parse:
-                    print("{}: Data: {}, Time: {}".format(counter, word708.data, word708.time))
+                    print("{:<5} Data: {}, Time: {}".format(counter, word708.data, word708.time))
                 counter = counter + 1
             return True
 
@@ -127,12 +139,14 @@ def words_429_from_raw(file):
 def words_708_from_raw(file):
     while True:
         chunk = file.read(204)
+        if len(chunk) < 204:
+            break
         if chunk:
             tmp_708 = Word708()
             tmp_708.time = int.from_bytes(chunk[:4], byteorder='little')
-            tmp_708.data = int.from_bytes(chunk[4:], byteorder='little')
+            tmp_708.data = (ctypes.c_ubyte * 200)()
+            for i in range(0, 200):
+                tmp_708.data[i] = ctypes.c_ubyte(chunk[i+4])
             yield tmp_708
         else:
             break
-
-

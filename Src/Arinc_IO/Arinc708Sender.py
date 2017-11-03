@@ -37,7 +37,7 @@ class Arinc708Sender(IArinc708, Sender):
 
             if sendRec > 0 and self.show_words_details is True:
                 for w in tmp_buf:
-                    print("Sent:  data: {:10} time: {}".format(hex(w.data), w.time))
+                    print("Sent:  \ndata: {}\ntime: {}".format(w.data, w.time))
 
             self._imported_words_sent = self._imported_words_sent + words_prepared_to_send
         else:
@@ -117,10 +117,13 @@ class Arinc708Sender(IArinc708, Sender):
         return ChannelTypes.Arinc708 == channel_type
 
     def _initialize_context(self):
-        self.__context = byref((Word708 * len(self._words))(*self._words))
-        _f_words = copy.deepcopy(self._words)
-        _f_words[0].time = self.__rate_time
-        self.__first_pointer = byref((Word708 * len(_f_words))(*_f_words))
+        if self.is_imported():
+            return
+        else:
+            self.__context = byref((Word708 * len(self._words))(*self._words))
+            _f_words = copy.deepcopy(self._words)
+            _f_words[0].time = self.__rate_time
+            self.__first_pointer = byref((Word708 * len(_f_words))(*_f_words))
 
     def _setup_channel(self):
         # no need to setup channel

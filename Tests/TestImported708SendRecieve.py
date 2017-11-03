@@ -8,9 +8,7 @@ if __name__ == '__main__':
 
     # маршрут3_процедура.scc429
     # маршрут3_процедура_маневр.scc429
-    # path_to_bin = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//маршрут3_процедура.scc429'))
-
-    path_to_bin = None
+    path_to_bin = os.path.abspath(os.path.join(os.path.dirname(__file__), '../bin trace//1_Arinc708.sccr'))
 
     # Initialize test environment
 
