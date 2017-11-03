@@ -46,10 +46,16 @@ class Arinc708Listener(IArinc708, Listener):
 
         sleep(0.02)
 
-    def get_log(self):
+    def get_log(self, from_byte, to_byte):
         """
         :return: dict { data : [ count, time ] }
         """
+        if to_byte < from_byte:
+            raise ValueError("from_byte \"{}\" < to_byte\"{}\"". format(from_byte, to_byte))
+        if from_byte < 0:
+            raise ValueError("from_byte \"<\" < 0\"{}\"". format(from_byte))
+        if to_byte < 0:
+            raise ValueError("to_byte \"<\" < 0\"{}\"". format(from_byte))
         if len(self._sharedList) > 0:
             temp_list = []
             for w in self._sharedList:
@@ -66,7 +72,7 @@ class Arinc708Listener(IArinc708, Listener):
                 # print("_sharedList = ", temp_list[i].time)
             aggregation_dict = {}
             for i in temp_list:
-                test_ = tuple(i.data[0:16])
+                test_ = tuple(i.data[from_byte:to_byte])
                 count = aggregation_dict.get(test_)
                 if count is None:
                     aggregation_dict.setdefault(test_, [1, i.time])

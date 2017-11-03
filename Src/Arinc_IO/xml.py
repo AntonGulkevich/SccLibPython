@@ -2,6 +2,19 @@ import os
 import xml.etree.ElementTree as ET
 
 
+"""
+    #Example:
+
+    path_to_xml = os.path.abspath(os.path.join(os.path.dirname(__file__), '../path/file.xml'))
+    waypoints = import_waypoints_from_xml(path_to_xml)
+
+    if waypoints is not None:
+        for wp in waypoints:
+            print("Waypoint: ")
+            print(wp.__dict__)
+"""
+
+
 class Waypoint:
     def __init__(self):
         # 0

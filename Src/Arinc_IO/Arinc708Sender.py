@@ -10,6 +10,13 @@ from Arinc_IO.TrackParser import ChannelTypes
 
 
 class Arinc708Sender(IArinc708, Sender):
+
+    def _import_settings(self):
+        pass
+
+    def send_imported(self):
+        pass
+
     def __init__(self):
         super().__init__()
         self.__is_first = True
@@ -49,7 +56,6 @@ class Arinc708Sender(IArinc708, Sender):
 
             if sendRec > 0 and self.show_words_details is True:
                 for w in self._words:
-                    print(self.__is_first)
                     print("Sent:\tdata:", ' '.join(hex(value).ljust(4) for value in w.data),
                           "\n\t\ttime: {}".format(w.time if self.__is_first is False else self.__rate_time))
             self.__is_first = False
