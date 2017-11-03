@@ -54,10 +54,11 @@ if __name__ == '__main__':
     listener708.show_function_details = True
     listener708.show_words_details = True
     listener708.start(Mode.async, 4000)
+
     listener708.join()
     sender708.join()
 
-    arg_d = listener708.get_log(0, 10)
+    arg_d = listener708.get_log(0, 16)
 
     print("{0:{1}^86}".format(" Log 708", "="))
     for key, value in arg_d.items():

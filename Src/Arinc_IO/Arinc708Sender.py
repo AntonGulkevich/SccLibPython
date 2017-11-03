@@ -15,7 +15,37 @@ class Arinc708Sender(IArinc708, Sender):
         pass
 
     def send_imported(self):
-        pass
+        words_count_to_send = len(self._track_info.words) - self._imported_words_sent
+        if words_count_to_send > 0:
+            words_prepared_to_send = words_count_to_send if words_count_to_send < MAX_WORD708_COUNT else MAX_WORD708_COUNT
+            # print(words_count_to_send, " Max ", MAX_WORD429_COUNT, " prepared:", words_prepared_to_send)
+            tmp_buf = []
+            for w in self._track_info.words[self._imported_words_sent:words_prepared_to_send + self._imported_words_sent]:
+                word = Word708()
+                word.data = w.data
+                word.time = w.time
+                tmp_buf.append(word)
+            self.__context = byref((Word708 * words_prepared_to_send)(*tmp_buf))
+
+            sendRec = Proxy.Send708WordsRaw(self.get_serial_number(), self.get_channel_number(), self.__context,
+                                            words_prepared_to_send)
+            if sendRec < 0:
+                raise LibError("Send708WordsRaw failed. ", sendRec)
+
+            if sendRec > 0 and self.show_function_details is True:
+                print("Sent 708 words: {}".format(sendRec))
+
+            if sendRec > 0 and self.show_words_details is True:
+                for w in tmp_buf:
+                    print("Sent:  data: {:10} time: {}".format(hex(w.data), w.time))
+
+            self._imported_words_sent = self._imported_words_sent + words_prepared_to_send
+        else:
+            res_count = Proxy.Get708OutputBufferWordsCount(self.get_serial_number(), self.get_channel_number())
+            if res_count == 0:
+                self._imported_words_sent = 0
+
+        sleep(0.02)
 
     def __init__(self):
         super().__init__()

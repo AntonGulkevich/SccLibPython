@@ -6,15 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f3624c4-1116-4e42-9612-b36e72016dee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/TestImported429SendRecieve.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Src/Main.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/xml.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" afterPath="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" afterPath="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestScripted708SendRecieve.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestScripted708SendRecieve.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="600">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -102,41 +97,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestImported708SendRecieve.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestImported708SendRecieve.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arinc708Listener.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplicatedProcess.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+            <state relative-caret-position="328">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#1092#1135#0" expanded="false" />
-                <element signature="e#1553#1567#0" expanded="false" />
-                <element signature="e#1706#2041#0" expanded="false" />
-                <element signature="e#2858#2861#0" expanded="false" />
-                <element signature="e#3360#3432#0" expanded="false" />
-                <element signature="e#3482#3754#0" expanded="false" />
-                <element signature="e#3817#3843#0" expanded="false" />
-                <element signature="e#3890#3912#0" expanded="false" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,8 +112,8 @@
       <file leaf-file-name="TrackParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+            <state relative-caret-position="102">
+              <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -169,8 +136,8 @@
       <file leaf-file-name="Arinc429Sender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2363">
-              <caret line="157" column="66" lean-forward="true" selection-start-line="157" selection-start-column="66" selection-end-line="157" selection-end-column="66" />
+            <state relative-caret-position="634">
+              <caret line="131" column="19" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="131" selection-end-column="19" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -181,11 +148,23 @@
       <file leaf-file-name="Arinc708Sender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="-46">
+              <caret line="35" column="59" lean-forward="true" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
-                <element signature="e#667#693#0" expanded="false" />
+                <element signature="e#2281#2307#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestImported429SendRecieve.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/TestImported429SendRecieve.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="35" column="141" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="141" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -266,11 +245,11 @@
         <option value="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
         <option value="$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py" />
         <option value="$PROJECT_DIR$/Tests/TestImported429SendRecieve.py" />
-        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" />
-        <option value="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
         <option value="$PROJECT_DIR$/Src/Main.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
         <option value="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" />
+        <option value="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
       </list>
     </option>
   </component>
@@ -386,7 +365,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestScripted708SendRecieve">
+  <component name="RunManager" selected="Python.TestImported708SendRecieve">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -418,6 +397,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SCC in python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/TestImported429SendRecieve.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="TestImported708SendRecieve" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SCC in python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -456,37 +452,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="TrackParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Src/Arinc_IO" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SCC in python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TrackParser" />
-      <item index="2" class="java.lang.String" itemvalue="Python.TestScripted429SendRecieve" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
+      <item index="1" class="java.lang.String" itemvalue="Python.TestScripted429SendRecieve" />
+      <item index="2" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestImported708SendRecieve" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TestScripted429SendRecieve" />
-        <item index="4" class="java.lang.String" itemvalue="Python.TrackParser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestImported708SendRecieve" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TestScripted429SendRecieve" />
       </list>
     </recent_temporary>
   </component>
@@ -518,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509635103498</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added functional tests, removed main">
+      <created>1509710638627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509710638627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -559,8 +545,8 @@
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3128314" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3128314" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3128314" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -612,7 +598,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completed parse from bin file" />
     <MESSAGE value="released import track from file support for sender 429" />
-    <option name="LAST_COMMIT_MESSAGE" value="released import track from file support for sender 429" />
+    <MESSAGE value="added functional tests, removed main" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functional tests, removed main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,6 +931,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -962,16 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-267">
@@ -982,21 +975,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="54" column="59" lean-forward="true" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="102">
+          <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
-            <element signature="e#667#693#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="157" column="66" lean-forward="true" selection-start-line="157" selection-start-column="66" selection-end-line="157" selection-end-column="66" />
+        <state relative-caret-position="634">
+          <caret line="131" column="19" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="131" selection-end-column="19" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
@@ -1005,42 +997,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/TestImported429SendRecieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="498">
+          <caret line="35" column="141" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="141" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-46">
+          <caret line="35" column="59" lean-forward="true" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#2281#2307#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="600">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
