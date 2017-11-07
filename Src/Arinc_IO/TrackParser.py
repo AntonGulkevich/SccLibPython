@@ -70,7 +70,6 @@ class TrackInfo:
         if channel_type == ChannelTypes.Unknown:
             channel_type = self.default_channel
 
-        # channel_type == 0 or channel_type == 3 or channel_type == 4
         if any(channel_type == t for t in [ChannelTypes.Unknown, ChannelTypes.Rs232, ChannelTypes.Ftd]):
             raise (ValueError("Wrong channel type: {}".format(channel_type.name)))
         if channel_type is ChannelTypes.Arinc429:

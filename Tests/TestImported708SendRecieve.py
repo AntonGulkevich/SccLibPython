@@ -18,14 +18,14 @@ if __name__ == '__main__':
     sender708.import_from_file(path_to_bin)
     sender708.show_function_details = True
     sender708.show_words_details = True
-    sender708.start(Mode.async, 5000)
+    sender708.start(Mode.async, 10000)
 
     listener708 = Arinc708Listener()
     listener708.bind(None, 0)
     listener708.set_reset_buffer_flag(True)
     listener708.show_function_details = True
     listener708.show_words_details = True
-    listener708.start(Mode.async, 4000)
+    listener708.start(Mode.async, 10000)
 
     listener708.join()
     sender708.join()

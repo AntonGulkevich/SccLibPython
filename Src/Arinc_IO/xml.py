@@ -15,6 +15,21 @@ import xml.etree.ElementTree as ET
 """
 
 
+class Intruder:
+    def __init__(self):
+        self.id = 0
+        self.distance = 0
+        self.bearing = 0
+        self.vertical_direction = 0
+        self.relative_altitude = 0
+        self.symbol_type = 0
+        self.sensitivity_level = 0
+        self.matrix_130 = 3 # range
+        self.matrix_131 = 3 # altitude
+        self.matrix_132 = 3 # bearing
+
+
+
 class Waypoint:
     def __init__(self):
         # 0
@@ -72,3 +87,29 @@ def import_waypoints_from_xml(path):
         waypoints.append(temp_wp)
 
     return waypoints
+
+
+def import_intruders_from_xml(path):
+    if os.path.isfile(path) is False:
+        return None
+
+    tree = ET.parse(path)
+    root = tree.getroot()
+
+    intruders = []
+
+    for intruder in root.findall('Intruder'):
+        temp_wp = Intruder()
+        # print("Intruder")
+        elemList = []
+        for elem in intruder:
+            elemList.append(elem.tag)
+        for elem in elemList:
+            field = intruder.find(elem)
+            text = field.text
+            # print("\t", str(elem).ljust(max(len(str(ddd)) for ddd in elemList)), text)
+            if text is not None:
+                setattr(temp_wp, elem, text)
+        intruders.append(temp_wp)
+    return intruders
+

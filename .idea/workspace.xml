@@ -6,9 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f3624c4-1116-4e42-9612-b36e72016dee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/testXmlIntruders.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" afterPath="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Arinc_IO/xml.py" afterPath="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" afterPath="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,24 +86,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestScripted708SendRecieve.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py">
+      <file leaf-file-name="Arinc708Listener.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="353">
+              <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScripted429SendRecieve.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py">
+      <file leaf-file-name="Arinc429Listener.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+              <folding>
+                <element signature="e#555#603#0" expanded="false" />
+                <element signature="e#643#923#0" expanded="false" />
+                <element signature="e#1215#1266#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +113,8 @@
       <file leaf-file-name="TestImported708SendRecieve.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="291">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -121,44 +125,10 @@
       <file leaf-file-name="TrackParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
+            <state relative-caret-position="306">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sender.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="118" column="51" lean-forward="true" selection-start-line="118" selection-start-column="51" selection-end-line="118" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#861#865#0" expanded="false" />
-                <element signature="e#930#934#0" expanded="false" />
-                <element signature="e#994#998#0" expanded="false" />
-                <element signature="e#1048#1052#0" expanded="false" />
-                <element signature="e#1111#1115#0" expanded="false" />
-                <element signature="e#1173#1303#0" expanded="false" />
-                <element signature="e#1173#1290#1" expanded="false" />
-                <element signature="e#1451#1455#0" expanded="false" />
-                <element signature="e#2156#2345#0" expanded="false" />
-                <element signature="e#2386#2563#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestParse429Track.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/TestParse429Track.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +137,7 @@
       <file leaf-file-name="Arinc429Sender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
+            <state relative-caret-position="17">
               <caret line="54" column="78" lean-forward="true" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
@@ -189,14 +159,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestImported429SendRecieve.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/TestImported429SendRecieve.py">
+      <file leaf-file-name="xml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="512">
+              <caret line="110" column="12" lean-forward="false" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testXmlIntruders.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/testXmlIntruders.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestParse429Track.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/TestParse429Track.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestScenarios.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/TestScenarios.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-950">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -273,16 +277,17 @@
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py" />
         <option value="$PROJECT_DIR$/Src/Generic_Arinc_IO_types/Sender.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py" />
-        <option value="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
         <option value="$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py" />
         <option value="$PROJECT_DIR$/Tests/TestImported429SendRecieve.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py" />
         <option value="$PROJECT_DIR$/Src/Main.py" />
-        <option value="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
         <option value="$PROJECT_DIR$/Tests/TestParse429Track.py" />
-        <option value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
         <option value="$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py" />
         <option value="$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py" />
+        <option value="$PROJECT_DIR$/Tests/TestImported708SendRecieve.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
+        <option value="$PROJECT_DIR$/Src/Arinc_IO/xml.py" />
+        <option value="$PROJECT_DIR$/Tests/testXmlIntruders.py" />
       </list>
     </option>
   </component>
@@ -398,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TestScripted708SendRecieve">
+  <component name="RunManager" selected="Python.testXmlIntruders">
     <configuration name="TestImported429SendRecieve" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -467,19 +472,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="TrackParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="testXmlIntruders" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Src/Arinc_IO" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SCC in python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/testXmlIntruders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -488,16 +493,16 @@
       <item index="0" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
       <item index="1" class="java.lang.String" itemvalue="Python.TestImported708SendRecieve" />
       <item index="2" class="java.lang.String" itemvalue="Python.TestParse429Track" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TrackParser" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
+      <item index="3" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testXmlIntruders" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TestImported708SendRecieve" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
-        <item index="3" class="java.lang.String" itemvalue="Python.TestParse429Track" />
-        <item index="4" class="java.lang.String" itemvalue="Python.TrackParser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testXmlIntruders" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TestScripted708SendRecieve" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TestImported708SendRecieve" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TestImported429SendRecieve" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TestParse429Track" />
       </list>
     </recent_temporary>
   </component>
@@ -557,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510052224145</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added dynamic functor">
+      <created>1510052870994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510052870994</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -655,7 +667,8 @@
     <MESSAGE value="added tests for arinc 708" />
     <MESSAGE value="Arinc 708 Track issue detected" />
     <MESSAGE value="Fixed file seek error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed file seek error" />
+    <MESSAGE value="Added dynamic functor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic functor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -674,14 +687,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../PythonApplication3/PythonApplication3/ArincTypes.py" />
     <entry file="file://$PROJECT_DIR$/../PythonApplication3/PythonApplication3/ArincTypes.py" />
     <entry file="file://D:/pythonInterpreterx64/Lib/multiprocessing/pool.py">
@@ -826,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestScenarios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/IOSettings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -857,19 +854,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#54#0" expanded="false" />
-            <element signature="e#555#603#0" expanded="false" />
-            <element signature="e#643#923#0" expanded="false" />
-            <element signature="e#1215#1266#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,14 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Generic_Arinc_IO_types/ComplicatedProcess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -955,71 +931,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Src/MediatorClientWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="234" column="4" lean-forward="false" selection-start-line="234" selection-start-column="4" selection-end-line="234" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-736">
-          <caret line="54" column="78" lean-forward="true" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestParse429Track.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestImported429SendRecieve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,24 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1893" column="34" lean-forward="true" selection-start-line="1893" selection-start-column="34" selection-end-line="1893" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1077,6 +975,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestScripted429SendRecieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestImported429SendRecieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/TrackParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Sender.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -1088,12 +1024,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/TestScripted708SendRecieve.py">
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc708Listener.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="353">
+          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Sender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="54" column="78" lean-forward="true" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/Arinc429Listener.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+          <folding>
+            <element signature="e#555#603#0" expanded="false" />
+            <element signature="e#643#923#0" expanded="false" />
+            <element signature="e#1215#1266#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/ArincTypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestScenarios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestParse429Track.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestImported708SendRecieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Arinc_IO/xml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="110" column="12" lean-forward="false" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/testXmlIntruders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
