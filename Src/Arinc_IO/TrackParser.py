@@ -31,7 +31,7 @@ class TrackInfo:
         self.rate: Rates = None
         self.words = []
 
-        self.__show_parse = True
+        self.__show_parse = False
 
     def import_track(self, path):
         if os.path.isfile(path) is False:
@@ -65,10 +65,13 @@ class TrackInfo:
         channel_type = ChannelTypes(int.from_bytes(header[offset:offset + 4], byteorder='little'))
         self.channel_type = channel_type
         offset = offset + 4
+
+        if channel_type == ChannelTypes.Unknown:
+            channel_type = ChannelTypes.Arinc708
+
         # channel_type == 0 or channel_type == 3 or channel_type == 4
         if any(channel_type == t for t in [ChannelTypes.Unknown, ChannelTypes.Rs232, ChannelTypes.Ftd]):
             raise (ValueError("Wrong channel type: {}".format(channel_type.name)))
-
         if channel_type is ChannelTypes.Arinc429:
 
             """ Rate """
@@ -90,7 +93,7 @@ class TrackInfo:
             """ Data """
 
             # data
-            file.seek(1024, 1)
+            file.seek(1024)
             # read 429 data
             counter = 1
             for word429 in words_429_from_raw(file):
@@ -112,21 +115,43 @@ class TrackInfo:
             """ Data """
 
             # data
-            file.seek(1024, 1)
+            file.seek(1024)
             # read 708 data
             counter = 1
             for word708 in words_708_from_raw(file):
-                assert (word708.time != 0)
+                assert word708.time
                 self.words.append(word708)
                 if self.__show_parse:
-                    print("{:<5} Data: {}, Time: {}".format(counter, word708.data, word708.time))
+                    print("{:<5}\n\tData: {}\n\tTime: {}".format(counter, [hex(i).ljust(4) for i in self.words[-1].data], self.words[-1].time))
                 counter = counter + 1
             return True
 
 
+def words_708_from_raw(file):
+    while True:
+        chunk = file.read(204)
+        if len(chunk) < 204:
+            assert (len(chunk) == 0)
+            break
+        if chunk:
+            tmp_708 = Word708()
+            # print([hex(i).ljust(4)[2:] for i in chunk])
+            tmp_708.time = int.from_bytes(chunk[:4], byteorder='little')
+            tmp_708.data = (ctypes.c_ubyte * 200)()
+            for i in range(0, 200):
+                tmp_708.data[i] = ctypes.c_ubyte(chunk[i+4])
+            yield tmp_708
+        else:
+            break
+
+
 def words_429_from_raw(file):
+
     while True:
         chunk = file.read(8)
+        if len(chunk) < 8:
+            assert (len(chunk) == 0)
+            break
         if chunk:
             tmp_429 = Word429()
             tmp_429.time = int.from_bytes(chunk[:4], byteorder='little')
@@ -136,17 +161,6 @@ def words_429_from_raw(file):
             break
 
 
-def words_708_from_raw(file):
-    while True:
-        chunk = file.read(204)
-        if len(chunk) < 204:
-            break
-        if chunk:
-            tmp_708 = Word708()
-            tmp_708.time = int.from_bytes(chunk[:4], byteorder='little')
-            tmp_708.data = (ctypes.c_ubyte * 200)()
-            for i in range(0, 200):
-                tmp_708.data[i] = ctypes.c_ubyte(chunk[i+4])
-            yield tmp_708
-        else:
-            break
+
+
+
