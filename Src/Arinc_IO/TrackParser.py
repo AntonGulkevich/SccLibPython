@@ -30,6 +30,7 @@ class TrackInfo:
         self.parity: Arinc429ParityTypeIn = None
         self.rate: Rates = None
         self.words = []
+        self.default_channel = ChannelTypes.Arinc708
 
         self.__show_parse = False
 
@@ -67,7 +68,7 @@ class TrackInfo:
         offset = offset + 4
 
         if channel_type == ChannelTypes.Unknown:
-            channel_type = ChannelTypes.Arinc708
+            channel_type = self.default_channel
 
         # channel_type == 0 or channel_type == 3 or channel_type == 4
         if any(channel_type == t for t in [ChannelTypes.Unknown, ChannelTypes.Rs232, ChannelTypes.Ftd]):

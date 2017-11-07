@@ -7,15 +7,14 @@ from Arinc708Generator import Arinc708Generator, ColorIndex
 
 
 def foo(val):
-    tmp = bytearray(val.data)
-    print(val.time)
+    tmp = bytearray(val)
     sh = struct.unpack('@H', tmp[6:8])
     sh = sh[0] + 30
     byteR = struct.pack("H", sh & 0xFFFF)
     tmp[6] = byteR[0]
     tmp[7] = byteR[1]
-    val.data = (c_ubyte * 200)(*tmp)
-    return val
+    data = (c_ubyte * 200)(*tmp)
+    return data
 
 
 if __name__ == '__main__':
@@ -46,6 +45,7 @@ if __name__ == '__main__':
     sender708.append(word708Data2)
     sender708.show_function_details = True
     sender708.show_words_details = True
+    sender708.set_dynamic_function(foo)
     sender708.start(Mode.async, 5000)
 
     listener708 = Arinc708Listener()
