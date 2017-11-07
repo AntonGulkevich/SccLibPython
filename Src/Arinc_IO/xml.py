@@ -17,16 +17,16 @@ import xml.etree.ElementTree as ET
 
 class Intruder:
     def __init__(self):
-        self.id = 0
-        self.distance = 0
-        self.bearing = 0
-        self.vertical_direction = 0
-        self.relative_altitude = 0
-        self.symbol_type = 0
-        self.sensitivity_level = 0
-        self.matrix_130 = 3 # range
-        self.matrix_131 = 3 # altitude
-        self.matrix_132 = 3 # bearing
+        self.Id = 0
+        self.Distance = 0
+        self.Bearing = 0
+        self.VerticalDirection = 0
+        self.RelativeAltitude = 0
+        self.SymbolType = 0
+        self.SensitivityLevel = 0
+        self.Matrix130 = 3 # range
+        self.Matrix131 = 3 # altitude
+        self.Matrix132 = 3 # bearing
 
 
 
